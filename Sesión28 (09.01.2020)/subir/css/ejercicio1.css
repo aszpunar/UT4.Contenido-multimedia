@@ -1,0 +1,22 @@
+* {
+  font-family: monospace;
+}
+
+h2 {
+  text-align: center;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+}
+figure figcaption {
+  text-align: center;
+}
+
+.srcimg {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=ejercicio1.css.map */

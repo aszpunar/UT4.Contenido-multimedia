@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ejercicio1.css">
+    <title>Imágenes</title>
+</head>
+
+<body>
+
+
+    <h2>Figure y caption</h2>
+    <figure>
+        <img src="img/nature-4742132.jpg" alt="Naturaleza" title="Naturaleza">
+        <figcaption>Naturaleza</figcaption>
+    </figure>
+
+    <h2>Picture</h2>
+    <picture>
+        <source class="srcimg" media="(min-width: 650px)" srcset="img/img1.jpg">
+        <source class="srcimg" media="(min-width: 465px)" srcset="img/img01.jpg">
+        <img class="srcimg" src="img/h.webp" alt="Imagen retrocompatible" style="width:auto;">
+    </picture>
+
+
+    <h2>AUDIO</h2>
+    <audio id="audio1" controls>
+        <source src="audio/a.mp3" type="audio/mpeg">
+        <source src="audio/a.ogg" type="audio/ogg">
+        <source src="audio/a.wav" type="audio/wav">
+        Tu navegador no soporta esta etiqueta HTML5
+    </audio>
+    <div> 
+        <button onclick="document.getElementById('audio1').play()">Reproducir el Audio</button> 
+        <button onclick="document.getElementById('audio1').pause()">Pausar el Audio</button> 
+        <button onclick="document.getElementById('audio1').volume+=0.1">Aumentar el Volumen</button> 
+        <button onclick="document.getElementById('audio1').volume-=0.1">Disminuir el Volumen</button> 
+    </div>
+    
+</body>
+
+</html>
