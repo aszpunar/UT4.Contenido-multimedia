@@ -1,0 +1,15 @@
+.clasecanvas1 {
+  border: 10px solid black;
+}
+
+.botones {
+  display: flex;
+}
+.botones button {
+  width: 20%;
+  margin: 10px;
+  border: 2px solid pink;
+  background-color: papayawhip;
+}
+
+/*# sourceMappingURL=ejercicio2.css.map */
