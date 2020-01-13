@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ejercicio3.css">
+    <title>Almacenamiento local</title>
+</head>
+
+<body>
+    <!-- <script>
+        if (typeof (Storage) !== "undefined") {
+            window.alert('El navegador soporta almacenamiento local');
+        } else {
+            window.alert('El navegador no soporta almacenamiento local');
+        }
+    </script> -->
+
+
+    <h2>LocalStorage: Sin fecha de caducidad</h2>
+    <div id="localId">Aquí aparecerá lo del localStorage si das al botón</div>
+    <button onclick="verLocal()">Ver LocalStorage</button>
+    <script>
+        function verLocal() {
+            localStorage.setItem("equipo", "Deportivo");
+            document.getElementById("localId").innerHTML = localStorage.getItem("equipo");
+        }
+    </script>
+
+
+    <h2>SessionStorage: Se pierden al cerrar la pestaña</h2>
+    <div id="sesionId">Aquí aparecerá lo del SessionStorage si das al botón</div>
+    <button onclick="verSesion()">Ver SessionStorage</button>
+    <script>
+        function verSesion() {
+            if (sessionStorage.cuentadeclicks) { //Si existe el contador, lo incrementamos en 1 
+                sessionStorage.cuentadeclicks = Number(sessionStorage.cuentadeclicks) + 1; 
+                //Realizamos conversión a número para evitar problemas. Los datos siempre se almacenan como cadena y requieren conversión. 
+            } else { 
+                // Si no existe el contador, lo creamos 
+                sessionStorage.cuentadeclicks = 1; 
+            } 
+            document.getElementById("sesionId").innerHTML = "Has hecho clic en el botón: " + sessionStorage.cuentadeclicks + " veces en esta sesión.";
+            }
+    </script>
+</body>
+
+</html>

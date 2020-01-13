@@ -1,0 +1,23 @@
+body {
+  font-family: monospace;
+}
+
+h2 {
+  text-align: center;
+}
+
+div {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  background-color: palevioletred;
+  font-size: 40px;
+}
+
+button {
+  display: block;
+  margin: auto;
+  widows: 20%;
+}
+
+/*# sourceMappingURL=ejercicio3.css.map */
