@@ -1,0 +1,102 @@
+.contenedorgrid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.elementogrid {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contenedorgridinline {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.contGridEspacio {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 100px;
+}
+.contGridEspacio > .elementogrid {
+  background-color: #2196F3;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.contGridJuntar {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px 100px;
+}
+.contGridJuntar #elemento1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.contGridJuntar #elemento6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.contGridJuntar #elemento3 {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-color: palegreen;
+}
+.contGridJuntar > .elementogrid {
+  background-color: #2196F3;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: 100px 200px 70px;
+  grid-template-rows: 200px 100px 150px;
+  background-color: royalblue;
+  padding: 20px;
+  gap: 20px 20px;
+}
+.gridRow .elementogrid {
+  background-color: purple;
+  padding: 20px;
+}
+
+.gridJustify {
+  display: grid;
+  grid-template-columns: 100px 200px 70px;
+  grid-template-rows: 200px 100px 150px;
+  background-color: royalblue;
+  padding: 20px;
+  justify-content: stretch;
+}
+.gridJustify .elementogrid {
+  background-color: purple;
+  padding: 20px;
+}
+
+.gridAlign {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 100px 200px 70px;
+  grid-template-rows: 200px 100px 150px;
+  background-color: royalblue;
+  padding: 20px;
+  align-content: end;
+}
+.gridAlign .elementogrid {
+  background-color: pink;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=ejercicio1.css.map */
