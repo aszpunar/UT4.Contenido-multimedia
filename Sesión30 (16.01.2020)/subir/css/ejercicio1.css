@@ -99,4 +99,16 @@
   padding: 20px;
 }
 
+.contenedorPerfecto {
+  display: grid;
+  background-color: powderblue;
+  height: 600px;
+  justify-content: center;
+  align-content: center;
+}
+.contenedorPerfecto > .elemento {
+  padding: 20px;
+  background-color: pink;
+}
+
 /*# sourceMappingURL=ejercicio1.css.map */

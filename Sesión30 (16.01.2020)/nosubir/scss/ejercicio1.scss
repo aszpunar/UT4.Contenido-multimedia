@@ -101,3 +101,16 @@
         padding: 20px;
     }
 }
+
+.contenedorPerfecto{
+    display: grid;
+    background-color: powderblue ;
+    height: 600px;
+    justify-content: center;
+    align-content: center;
+    > .elemento{
+        padding: 20px;
+        background-color: pink;
+    }
+
+}
