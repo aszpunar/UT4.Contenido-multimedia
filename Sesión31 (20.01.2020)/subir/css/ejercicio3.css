@@ -1,0 +1,15 @@
+.sinObject {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.sinObject img:first-child {
+  object-fit: scale-down;
+  width: 400px;
+  height: 800px;
+}
+.sinObject img:last-child {
+  width: 400px;
+  height: 800px;
+}
+
+/*# sourceMappingURL=ejercicio3.css.map */

@@ -1,0 +1,13 @@
+.sinObject {
+    display: grid;
+    grid-template-columns: auto auto;
+     img:first-child {
+        object-fit: scale-down;
+        width: 400px;
+        height: 800px;
+    }
+     img:last-child {
+        width: 400px;
+        height: 800px;
+    }
+}
