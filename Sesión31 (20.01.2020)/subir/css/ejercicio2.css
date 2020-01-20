@@ -1,3 +1,40 @@
+.img1 {
+  width: 100%;
+  height: auto;
+}
 
+.contenedor {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  background-color: plum;
+  gap: 20px;
+}
+.contenedor .img2 {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.imagen2 > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen3 {
+  width: 80%;
+  min-height: 400px;
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-content: end;
+  background-image: url("../img/paris2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 2px dotted plum;
+}
 
 /*# sourceMappingURL=ejercicio2.css.map */
